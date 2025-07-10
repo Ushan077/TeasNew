@@ -25,7 +25,7 @@
 
 <!-- Add Tea Form -->
 <h2>Add New Tea</h2>
-<form action="<%= request.getContextPath() %>/TeaServlet" method="post">
+<form action="<%= request.getContextPath() %>/TeaServlet" method="post" enctype="multipart/form-data">
     <input type="hidden" name="action" value="add" />
     Name: <input type="text" name="name" required /><br/>
     Region: <input type="text" name="region" /><br/>
@@ -34,7 +34,7 @@
     Strength: <input type="text" name="strength" /><br/>
     Price: <input type="text" name="price" required /><br/>
     Quantity: <input type="number" name="quantity" /><br/>
-    Image: <input type="file" name="image" accept="image/*" /><br/>
+     Image: <input type="file" name="image" accept="image/*" /><br/>
     <input type="submit" value="Add Tea" />
 </form>
 
